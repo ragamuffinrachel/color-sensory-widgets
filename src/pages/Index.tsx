@@ -40,6 +40,24 @@ const widgets = [
     color: "neutral",
     path: "/widgets/flavor-metaphors", 
     status: "ready"
+  },
+  {
+    id: "gelato-harmony",
+    title: "Gelato of Harmony",
+    description: "Hover spice jars to discover how scents connect to color harmony rules",
+    icon: Coffee,
+    color: "warm",
+    path: "/widgets/gelato-harmony",
+    status: "ready"
+  },
+  {
+    id: "palette-pairing",
+    title: "Palette Pairing Lab", 
+    description: "Drag syrup bottles into a latte cup to create perfect color moods",
+    icon: Palette,
+    color: "cool",
+    path: "/widgets/palette-pairing",
+    status: "ready"
   }
 ];
 

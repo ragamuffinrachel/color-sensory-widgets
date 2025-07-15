@@ -9,6 +9,8 @@ import LearningObjectivesWidget from "./pages/widgets/LearningObjectivesWidget";
 import SipSliderWidget from "./pages/widgets/SipSliderWidget";
 import ColorTheoryWidget from "./pages/widgets/ColorTheoryWidget";
 import FlavorMetaphorsWidget from "./pages/widgets/FlavorMetaphorsWidget";
+import GelatoOfHarmonyWidget from "./pages/widgets/GelatoOfHarmonyWidget";
+import PalettePairingLabWidget from "./pages/widgets/PalettePairingLabWidget";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/widgets/sip-slider" element={<SipSliderWidget />} />
           <Route path="/widgets/color-theory" element={<ColorTheoryWidget />} />
           <Route path="/widgets/flavor-metaphors" element={<FlavorMetaphorsWidget />} />
+          <Route path="/widgets/gelato-harmony" element={<GelatoOfHarmonyWidget />} />
+          <Route path="/widgets/palette-pairing" element={<PalettePairingLabWidget />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
