@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LearningObjectivesWidget from "./pages/widgets/LearningObjectivesWidget";
+import SipSliderWidget from "./pages/widgets/SipSliderWidget";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/widgets/learning-objectives" element={<LearningObjectivesWidget />} />
+          <Route path="/widgets/sip-slider" element={<SipSliderWidget />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

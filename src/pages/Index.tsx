@@ -15,6 +15,15 @@ const widgets = [
     status: "ready"
   },
   {
+    id: "sip-slider",
+    title: "Sip-Slider",
+    description: "Interactive coffee stirring experience with real-time gradient changes to explore color temperature",
+    icon: Coffee,
+    color: "warm",
+    path: "/widgets/sip-slider",
+    status: "ready"
+  },
+  {
     id: "color-theory",
     title: "Color Theory Explorer", 
     description: "Interactive tool for exploring warm vs cool colors and their emotional impact",
