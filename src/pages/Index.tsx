@@ -30,7 +30,7 @@ const widgets = [
     icon: Palette,
     color: "cool", 
     path: "/widgets/color-theory",
-    status: "coming-soon"
+    status: "ready"
   },
   {
     id: "flavor-metaphors",
@@ -39,7 +39,7 @@ const widgets = [
     icon: Coffee,
     color: "neutral",
     path: "/widgets/flavor-metaphors", 
-    status: "coming-soon"
+    status: "ready"
   }
 ];
 
