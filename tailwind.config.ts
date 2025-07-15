@@ -52,6 +52,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Color Theory Tokens
+				warm: {
+					primary: 'hsl(var(--warm-primary))',
+					secondary: 'hsl(var(--warm-secondary))',
+					tertiary: 'hsl(var(--warm-tertiary))'
+				},
+				cool: {
+					primary: 'hsl(var(--cool-primary))',
+					secondary: 'hsl(var(--cool-secondary))',
+					tertiary: 'hsl(var(--cool-tertiary))'
+				},
+				chalk: {
+					dust: 'hsl(var(--chalk-dust))',
+					shadow: 'hsl(var(--chalk-shadow))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +99,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'unfold': {
+					'0%': {
+						opacity: '0',
+						transform: 'rotateX(-90deg) scale(0.8)',
+						transformOrigin: 'top center'
+					},
+					'50%': {
+						opacity: '0.7',
+						transform: 'rotateX(-45deg) scale(0.9)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'rotateX(0deg) scale(1)'
+					}
+				},
+				'chalk-write': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.3)' },
+					'50%': { boxShadow: '0 0 30px hsl(var(--primary) / 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'unfold': 'unfold 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+				'chalk-write': 'chalk-write 0.4s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
 			}
 		}
 	},
